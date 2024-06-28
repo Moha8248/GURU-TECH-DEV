@@ -1,0 +1,70 @@
+<!-- thankyou.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    function payNow() {
+        var enteredAmount = {{ a }};
+        var amountInPaisa = enteredAmount * 100;
+
+        var options = {
+            "key": "rzp_test_VxojU5XhH0FIdv",
+            "amount": amountInPaisa,
+            "currency": "INR",
+            "name": "guru",
+            "description": "Advance Course Payment",
+            "image": "images/1.jpeg",
+            "handler": function (response) {
+                
+
+                // Send AJAX request to finalize data storage
+                $.ajax({
+                    url: "{% url 'finalize_record' %}",
+                    method: "POST",
+                    data: {
+                        'payment_id': response.razorpay_payment_id,
+                        'csrfmiddlewaretoken': '{{ csrf_token }}'
+                    },
+                    success: function(data) {
+                        if (data.status == 'success') {
+                            alert('Payment successful. Payment ID: ' + response.razorpay_payment_id);
+                            window.location.href = "{% url 'landingpage' %}";
+                        } else {
+                            alert('Failed to save the record.');
+                        }
+                    }
+                });
+            },
+            "prefill": {
+                "name": "san",
+                "email": "customer@example.com",
+                "contact": "9999999999"
+            },
+            "notes": {
+                "address": "Customer Address"
+            },
+            "theme": {
+                "color": "#399cc"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.open();
+    }
+
+    {% if payment_trigger %}
+        window.onload = function() {
+            payNow();
+        }
+    {% endif %}
+    </script>
+</head>
+<body>
+    <h1>Thank you for your registration</h1>
+    <p>Registration was successful!</p>
+</body>
+</html>

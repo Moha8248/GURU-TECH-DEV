@@ -1,0 +1,281 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Tech - Terms and Conditions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            
+            flex-direction: column;
+        }
+        .sidebar .logo img {
+            width: 83px;
+            height: 73px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .sidebar {
+            padding: 20px 10px;
+            
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-top: 30px;
+        }
+        .sidebar .logo div {
+            width: 50px;
+            height: 50px;
+            /* background-color: #0c2746; */
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 34px;
+            font-weight: bold;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .sidebar span {
+            font-size: 24px;
+            margin: 0;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 0;
+            /* color: #000; */
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            flex-grow: 1;
+            padding: 20px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            max-width: 600px;
+            width: 100%;
+        }
+        .content h2 {
+            margin-top: 0;
+            font-size: 28px;
+            /* color: #0c2746; */
+            text-align: center;
+        }
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            /* color: #333; */
+            font-size: 16px;
+            text-align: justify;
+        }
+        .content ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            text-align: justify;
+        }
+        .hidden {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                flex-direction: row;
+            }
+            .sidebar {
+                padding: 40px 20px;
+                height: 100vh;
+                align-items: flex-start;
+            }
+            .sidebar .logo {
+                margin-left: 20px;
+            }
+            .sidebar a {
+                margin-left: 30px;
+                text-align: left;
+            }
+            .container {
+                padding: 40px;
+            }
+            .content h2 {
+                margin-top: 20%;
+                font-size: 38px;
+            }
+            .content p,
+            .content ul li {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="{% static 'images/guru tech logo.jpeg' %}" alt="Guru Tech Logo">
+            <span>Guru Tech</span>
+        </div>
+        <a href="/landingpage/#" style="display: inline-block;
+                                padding: 12px 24px;
+                                font-size: 18px;
+                                font-weight: bold;
+                                color: #ffffff;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                background-color:orange;
+                                border: 2px solid #4CAF50;
+                                border-radius: 6px;
+                                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+                                transition: background-color 0.3s, color 0.3s, transform 0.3s;">
+
+    Home
+
+</a>
+
+        <!-- <a  href="/landingpage/#" style="font-size: 150%;">Home</a> -->
+        <a id="terms-link" style="font-size: 150%;">Terms and Conditions</a>
+        <a id="cancellation-link" style="font-size: 150%;">Cancellation and Refund Policy</a>
+        <a id="shipping-link" style="font-size: 150%;">Shipping and Delivery Policy</a>
+    </div>
+    <div class="container">
+        <div id="terms-content" class="content">
+            <h2>Terms & Conditions</h2>
+            <p><strong>Last updated on Jun 7th 2024</strong></p>
+            <p>For the purpose of these Terms and Conditions, The term "we", "us", "our" used anywhere on this page shall mean Guru Tech, whose registered/operational office is 180/3, STAR COMPLEX, ALAMBATTI ROAD, NAGAMANGALAM, Tiruchirappalli, TAMIL NADU 620012. "You", "your", "user", "visitor" shall mean any natural or legal person who is visiting our website and/or agreed to purchase from us.</p>
+            <p><strong>Your use of the website and/or purchase from us are governed by following Terms and Conditions:</strong></p>
+            <ul>
+                <li>The content of the pages of this website is subject to change without notice.</li>
+                <li>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</li>
+                <li>Your use of any information or materials on our website and/or product pages is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through our website and/or product pages meet your specific requirements.</li>
+                <li>Our website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance, and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.</li>
+                <li>All trademarks reproduced in our website which are not the property of, or licensed to, the operator are acknowledged on the website.</li>
+                <li>Unauthorized use of information provided by us shall give rise to a claim for damages and/or be a criminal offense.</li>
+                <li>From time to time our website may also include links to other websites. These links are provided for your convenience to provide further information.</li>
+                <li>You may not create a link to our website from another website or document without Guru Tech’s prior written consent.</li>
+                <li>Any dispute arising out of use of our website and/or purchase with us and/or any engagement with us is subject to the laws of India.</li>
+                <li>We, shall be under no liability whatsoever in respect of any loss or damage arising directly or indirectly out of the decline of authorization for any Transaction, on Account of the Cardholder having exceeded the preset limit mutually agreed by us with our acquiring bank from time to time.</li>
+            </ul>
+            <p>Disclaimer: The above content is created at Guru Tech's sole discretion. Razorpay shall not be liable for any content provided here and shall not be responsible for any claims and liability that may arise due to merchant’s non-adherence to it.</p>
+        </div>
+        <div id="cancellation-content" class="content hidden">
+            <h2>Cancellation and Refund Policy</h2>
+            <p><strong>Last updated on Jun 7th 2024</strong></p>
+            <p>Guru Tech believes in helping its customers as far as possible, and has therefore a liberal cancellation policy. Under this policy:</p>
+            <ul>
+                <li>Cancellations will be considered only if the request is made within 7 days of placing the order. However, the cancellation request may not be entertained if the orders have been communicated to the vendors/merchants and they have initiated the process of shipping them.</li>
+                <li>Guru Tech does not accept cancellation requests for perishable items like flowers, eatables etc. However, refund/replacement can be made if the customer establishes that the quality of product delivered is not good.</li>
+                <li>In case of receipt of damaged or defective items please report the same to our Customer Service team. The request will, however, be entertained once the merchant has checked and determined the same at his own end. This should be reported within 7 days of receipt of the products.</li>
+                <li>In case you feel that the product received is not as shown on the site or as per your expectations, you must bring it to the notice of our customer service within 7 days of receiving the product. The Customer Service Team after looking into your complaint will take an appropriate decision.</li>
+                <li>In case of complaints regarding products that come with a warranty from manufacturers, please refer the issue to them.</li>
+                <li>In case of any Refunds approved by the Guru Tech, it’ll take 6-8 days for the refund to be processed to the end customer.</li>
+            </ul>
+            <p>Disclaimer: The above content is created at Guru Tech's sole discretion. Razorpay shall not be liable for any content provided here and shall not be responsible for any claims and liability that may arise due to merchant’s non-adherence to it.</p>
+        </div>
+        <div id="shipping-content" class="content hidden">
+            <h2>Shipping and Delivery Policy</h2>
+            <p><strong>Last updated on Jun 7th 2024</strong></p>
+            <p>Shipping is not applicable for business.</p>
+            <p>Disclaimer: The above content is created at Guru Tech's sole discretion. Razorpay shall not be liable for any content provided here and shall not be responsible for any claims and liability that may arise due to merchant’s non-adherence to it.</p>
+        </div>
+    </div>
+    <!-- <form autocomplete="off" spellcheck="false" onsubmit="return submitForm(event)">
+        <div class="form-group">
+          <label for="fname">Name</label>
+          <input type="text" name="fname" id="fname" placeholder="Enter your name" required>
+          <span class="error-message" id="name-error"></span>
+        </div>
+      
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required>
+          <span class="error-message" id="phone-error"></span>
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          <span class="error-message" id="email-error"></span>
+        </div>
+      
+        <div class="form-group">
+          <label for="msg">Message</label>
+          <textarea name="msg" id="msg" placeholder="Enter your message" rows="4" required></textarea>
+          <span class="error-message" id="message-error"></span>
+        </div>
+      
+        <button type="submit">Submit</button>
+      </form>
+      
+      <script>
+        function submitForm(event) {
+          event.preventDefault(); // Prevent default form submission
+      
+          // Get form data
+          const formData = new FormData(event.target);
+          const formDataObject = Object.fromEntries(formData.entries());
+          var email=formDataObject.email
+          console.log(email,"email")
+          // Replace this email address with your desired recipient email
+          const recipientEmail = 'haritamilhp@gmail.com';
+      
+          // Construct mailto link with form data
+          const subject = encodeURIComponent('Contact Form Submission');
+          const body = encodeURIComponent(
+            `Name: ${formDataObject.fname}\n` +
+            `Phone: ${formDataObject.phone}%0D%0A` +
+            `Email: ${formDataObject.email}%0D%0A` +
+            `Message: ${formDataObject.msg}`
+          );
+          const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+      
+          // Open email client
+          window.open(mailtoLink);
+      
+          return false; // Prevent further bubbling of the event
+        }
+      </script> -->
+    <script>
+        document.getElementById('terms-link').addEventListener('click', function() {
+            document.getElementById('terms-content').classList.remove('hidden');
+            document.getElementById('cancellation-content').classList.add('hidden');
+            document.getElementById('shipping-content').classList.add('hidden');
+        });
+        
+        document.getElementById('cancellation-link').addEventListener('click', function() {
+            document.getElementById('cancellation-content').classList.remove('hidden');
+            document.getElementById('terms-content').classList.add('hidden');
+            document.getElementById('shipping-content').classList.add('hidden');
+        });
+        
+        document.getElementById('shipping-link').addEventListener('click', function() {
+            document.getElementById('shipping-content').classList.remove('hidden');
+            document.getElementById('terms-content').classList.add('hidden');
+            document.getElementById('cancellation-content').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

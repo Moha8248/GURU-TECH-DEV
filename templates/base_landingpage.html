@@ -1,0 +1,155 @@
+
+<html>
+{% load static %}
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- jQuery library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<title>Gurutech</title>
+
+<link rel="stylesheet" href="{% static 'images/homebase.css' %}">
+</head>
+<body>
+  
+   <div id="navbar">
+        <div class="containe">
+            <div class="row row1">
+               
+                <li  class="upper-links "><a class="links" href="#">
+ <img src="{% static 'images/hp.jpeg' %}" alt="Guru Tech Logo" style="width:57px; height:55px; vertical-align: middle; margin-right: 5px; border-radius: 50%;">                        Guru Tech
+                    </a></li>
+                <ul class="largenav pull-right" style="font-size:20px;padding-left: 35%;">
+                    <li class="upper-links"><a class="links" href="{% url 'contactus'%}">Contact Us</a></li>
+                    <li class="upper-links"><a class="links" href="{% url 'terms'%}">Our business policies </a></li>
+                    <li class="upper-links"><a class="links" href="#about us">About Us</a></li>
+
+                    
+                    <!-- <li class="upper-links"><a class="links" href="#contact">Contact us</a></li> -->
+                    
+                    <!-- <li ><a style="padding-right: 15%;" class="cart-button" href="/cart">
+                        <svg class="cart-svg" width="16" height="16" viewBox="0 0 16 16">
+                           
+                        </svg> 
+                    </a></li> -->
+                    <!-- <span style="color: white;">cart</span><span class="item-number"></span> -->
+                    <!-- <span class="item-number ">{{ product_count_in_cart }}</span>
+                    <li class="upper-links"><a class="links" href="/cart">🛒Cart</a></li> -->
+                    <!-- <li class="upper-links">
+        <a class="links cart-link" href="/cart">
+            <div class="cart-icon">
+                🛒
+                <span id="product-count-in-cart" style="background: orange;" class="item-number">{{ product_count_in_cart }}</span>
+            </div>
+            Cart
+        </a>
+    </li> -->
+
+                    <!-- <li class="upper-links"><a class="links" href="#contact">🛒Cart</a></li> -->
+                    <!-- <li class="upper-links"><a class="links" href="/customerlogin">Sign in</a></li>
+                    <li class="upper-links"><a class="links" href="/customersignup">Sign Up</a></li> -->
+                    <!-- <li class="upper-links">
+                        <a class="links" href="">Sign in & Sign Up</a>
+                        <ul class="dropdown-menu">
+                            <li class="profile-li"><a class="profile-links" href="/customerlogin">Sign in</a></li>
+                            <li class="profile-li"><a class="profile-links" href="/customersignup">Sign Up</a></li>
+                        </ul> -->
+                    </li>
+                    
+                    <li  class="upper-links "><a class="links"  href="#Courses" >Courses</a></li>
+                    <li class="upper-links"><a class="links" href="#test">Testimonials</a></li>
+                    
+                    <!-- <li class="upper-links"><a class="links" href="/adminclick">Admin</a></li>  -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+  <!---words-->
+<br><br><br>
+<!-- content start-->
+{% block content %}
+
+{% endblock content %}
+<!-- content end-->
+
+
+
+<div style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
+    <!-- Your existing HTML code here -->
+
+    <!-- Footer section -->
+    <footer id="contact" style="background-color: #000; color: #fff; padding: 50px 0; text-align: center;">
+    
+    <li  style="padding-right:87%" class="upper-links "><a class="links" href="#">
+ <img src="{% static 'images/hp.jpeg' %}" alt="Guru Tech Logo" style="width:57px; height:55px; vertical-align: middle; margin-right: 5px; border-radius: 50%;">              
+                    </a></li>
+        <div class="container" style="display: flex; flex-wrap: wrap; justify-content: center;">
+       
+            <div class="section" style="flex: 2; margin: 20px; text-align: center;">
+                <h2 style="margin-bottom: 20px; text-align: left; font-size: 1.3em;">Our Mission</h2>
+                <p style="text-align: left;">Develop teamwork skills through problem-solving challenges, fostering leadership, communication, and adaptability in diverse scenarios for optimal performance.</p>
+            </div>
+            <div class="section" style="flex: 1; margin: 20px;">
+                <h2 style="margin-bottom: 20px; font-size: 1.3em;">Our Courses</h2>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="padding-bottom: 3%;"><a href="#java" style="color: white;text-decoration: none;">Java</a></li>
+                    <li style="padding-bottom: 3%;"><a href="#python" style="color: white;text-decoration: none;">Python</a></li>
+                    <li style="padding-bottom: 3%;"><a href="#sql" style="color: white;text-decoration: none;">SQL</a></li>
+                    <li style="padding-bottom: 3%;"><a href="#angular" style="color: white;text-decoration: none;">Angular</a></li>
+                    <li style="padding-bottom: 3%;"><a href="#android" style="color: white;text-decoration: none;">Android</a></li>
+                    <li style="padding-bottom: 3%;"><a href="#react" style="color: white;text-decoration: none;">React</a></li>
+                </ul>
+            </div>
+            <div id="section" class="section" style="flex: 1; margin: 20px;">
+                <h2 style="margin-bottom: 20px; font-size: 1.3em;">Quick Links</h2>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li><a href="#" style="color: #fff; text-decoration: none; margin-bottom: 6px; display: block;">Home</a></li>
+                    <li><a href="#about us" style="color: #fff; text-decoration: none; margin-bottom: 6px; display: block;">About Us</a></li>
+                    <li><a href="#Courses" style="color: #fff; text-decoration: none; margin-bottom: 6px; display: block;">Our Courses</a></li>
+                    <li><a href="{% url 'contactus'%}" style="color: #fff; text-decoration: none; margin-bottom: 6px; display: block;">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="section contact" style="flex: 1; margin: 20px;text-align: left;">
+                <h2 style="margin-bottom: 20px; font-size: 1.3em;">Contact Us</h2>
+                <ul style="list-style: none; padding-left: 0;">
+                    
+                    <li><a href="tel:+917845493857" style="font-size: 20px; color: white;"><i style="transform: rotate(170deg); color: orange; font-size: 20px;" class="fas fa-phone icon"></i>          +91 7845493857</a></li>                      
+                    <br>
+                    <li ><a href="mailto:Gurutechharkscorp@gmail.com" style="font-size: 20px;font-style:Aril,sans,serif;"><i style=" font-size: 20px; color: white; " class="fas fa-envelope email-icon"><span style="padding-right:10px;"></span>Gurutechharkscorp@gmail.com</i></a></li>
+                    <br>
+                    <li><a href="https://maps.app.goo.gl/BCwVQ5v9aN3PEqa1A" target="_blank" style="font-size: 20px; color: white;">🏢  180/3, STAR COMPLEX, ALAMBATTI ROAD, NAGAMANGALAM, TIRUCHIRAPPALLI, TAMILNADU 620012.</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <hr style="width: 95%;">
+        <div class="footer" style="margin-top: 20px;">
+            <p>© 2024 GuruTech All Rights Reserved</p>
+            
+        </div>
+    </footer>
+</div>
+<script>
+$(document).ready(function(){
+
+function openNav() {
+document.getElementById("mySidenav").style.width = "70%";
+
+document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+document.body.style.backgroundColor = "rgba(0,0,0,0)";
+}
+
+
+});
+</script>
+
+</body>
+</html>
